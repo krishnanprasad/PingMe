@@ -22,14 +22,31 @@ class Dashboard extends Component {
         { value: '16,500', type: "Wallet", iconcolor: '#67be55', logo: 'wallet.png', daysleft: '7', enddate: '14 - Jun - 19', cost: 1520 },
         { value: '4,240', type: "Due Amount", iconcolor: '#e52f2d', logo: 'discount.png', daysleft: '12', enddate: '20 - Jun - 19', cost: 1920 },
         { value: '2', type: "Ends in 30 Days", iconcolor: '#e9aa17', logo: 'clock.png', daysleft: '7', enddate: '14 - Jun - 19', cost: 1520 },
-        
+
 
 
     ]
-
+    SearchCard = () => {
+        return (
+            <div className="row" style={{ marginBottom: '20px' }}>
+                <div className="col-md-9">
+                    <input type="text" class="form-control" placeholder="Search..." />
+                </div>
+                <div className="col-md-3" style={{ textAlign: 'center' }}>
+                    <select className="form-control">
+                        <option value="volvo">All</option>
+                        <option value="saab">Less than 15 Days</option>
+                        <option value="mercedes">Less than 30 Days</option>
+                        <option value="audi"> 30 Days and more</option>
+                    </select>
+                </div>
+            </div>
+        )
+    }
     cardrender = () => {
         return this.headerSections.map((headerSection => {
             return (
+
                 <div className="col-md-3 InfoCard">
                     <div class="ACard d-flex mb-3">
                         <div class="p-2 flex-grow-1 ">
@@ -56,6 +73,9 @@ class Dashboard extends Component {
                         {/* <div className="InfoCardRow">
                             {this.cardrender()}
                         </div> */}
+                        <div className="col-lg-10">
+                            {this.SearchCard()}
+                        </div>
 
                         <div className="col-md-12">
                             <h6>Utility</h6>

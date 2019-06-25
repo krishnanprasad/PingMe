@@ -7,6 +7,7 @@ import Homepage from './Pages/Home/Homepage';
 import Services from './Pages/Services/Services';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import TransactionList from './Pages/Transaction/TransactionList';
+import CardBrief from './Pages/Common/CardBrief';
 function App() {
   return (
     <div className="">
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Home/Dashboard" component={Dashboard} />
         <Route path="/Home/Service" component={Services} />
         <Route path="/Home/Transaction" component={TransactionList} />
+        <Route path="/Home/CardBrief" component={CardBrief} />
       </BrowserRouter>
     </div>
   );

@@ -13,13 +13,18 @@ class Navbardiv extends Component {
                     <div class="collapse navbar-collapse " id="collapsibleNavbar">
                         <ul class="navbar-nav ml-auto ">
                             <li class="nav-item">
+                                <Link to="/Home/Dashboard" className="nav-link">
+                                    <input type="button" class="btn btn-success btn-block" value="Add Ping" />
+                                </Link>
+                            </li>
+                            <li class="nav-item">
                                 <Link to="/Home/Dashboard" className="nav-link"><b>Home</b></Link>
                             </li>
                             <li class="nav-item">
                                 <Link to="/Home/Service" className="nav-link"><b>Services</b></Link>
                             </li>
                             <li class="nav-item">
-                            <Link to="/Home/Transaction" className="nav-link"><b>Transaction</b></Link>
+                                <Link to="/Home/Transaction" className="nav-link"><b>Transaction</b></Link>
                             </li>
                             <li class="nav-item">
                                 <Link to="/Home/Profile" className="nav-link"><b>Profile</b></Link>

@@ -20,7 +20,7 @@ class Usage extends Component {
                 <table className="table">
                     <thead>
                         <tr>
-                            <th>Service Provider</th>
+                            <th>Service</th>
                             <th>Amount</th>
                             <th>Last Date</th>
                            
