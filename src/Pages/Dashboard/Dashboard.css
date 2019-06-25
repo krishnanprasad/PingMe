@@ -1,0 +1,16 @@
+.InfoCardRow {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.InfoCardRow .InfoCard {
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .InfoCard {
+        width: 85%;
+    }
+   
+}

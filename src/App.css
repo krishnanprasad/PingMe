@@ -31,3 +31,15 @@
     transform: rotate(360deg);
   }
 }
+
+.SecondBlack{
+  color: #8c8c8c;
+}
+
+.FirstBlack{
+  color: #777777;
+}
+
+.FirstWhite{
+  color: white;
+}
