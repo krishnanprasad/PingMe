@@ -6,10 +6,15 @@ class CardBrief extends Component {
             <div>
                 <div className="row justify-content-center" style={{ marginTop: '20px' }}>
 
-                    <div class="col-lg-10">
+                    <div className="col-lg-10">
                         <div className="card ACard" style={{ marginTop: '10px', marginBottom: '20px' }}>
                             <div className="col-md-12">
-                                <p>Service Name</p>
+                                <div className="p-2 pl-20" style={{ marginBottom: 'auto', marginTop: 'auto' }}>
+                                    <div>
+                                        <img src={require('../../assets/Image/Business/netflix.jpg')} style={{ width: '42px', height: '42px', borderRadius: '50%' }} /><span style={{fontSize:'24px',marginLeft:'10px'}}>Netflix</span>
+
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-md-12">
                                 <p>Service Description</p>
@@ -17,26 +22,26 @@ class CardBrief extends Component {
                         </div>
 
 
-                        <div className="card ACard">
+                        <div className="card ACard" style={{backgroundColor:'#ffd996'}}>
                             <div className="row">
 
                                 <div className="col-md-4">
-                                    <div class="d-flex flex-column">
-                                        <div class="p-2">Your Plan</div>
-                                        <div class="p-2">Flex item 2</div>
+                                    <div className="d-flex flex-column">
+                                        <div className="p-2">Your Plan</div>
+                                        <div className="p-2">Flex item 2</div>
 
                                     </div>
                                 </div>
                                 <div className="col-md-4">
-                                    <div class="d-flex flex-column">
-                                        <div class="p-2">Amount</div>
-                                        <div class="p-2">1650</div>
+                                    <div className="d-flex flex-column">
+                                        <div className="p-2">Amount</div>
+                                        <div className="p-2">1650</div>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
-                                    <div class="d-flex flex-column">
-                                        <div class="p-2">Next Bill Date</div>
-                                        <div class="p-2">Flex item 2</div>
+                                    <div className="d-flex flex-column">
+                                        <div className="p-2">Next Bill Date</div>
+                                        <div className="p-2">Flex item 2</div>
 
                                     </div>
                                 </div>
@@ -44,8 +49,8 @@ class CardBrief extends Component {
 
                         </div>
 
-                        <div class="d-flex">                          
-                            <div class="p-2 ml-auto">
+                        <div className="d-flex">
+                            <div className="p-2 ml-auto">
                                 <input type="button" className="btn btn-success btn-block" value="Pay" />
                             </div>
                         </div>

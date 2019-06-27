@@ -12,8 +12,8 @@ class MembershipCard extends Component {
         return (
             <div>
                 <div className="d-flex card ACard flex-column" style={{ backgroundColor: 'white', opacity: '0.94' }}>
-                    <div class="d-flex ">
-                        <div class="p-2 pl-20" style={{ marginBottom: 'auto', marginTop: 'auto' }}>
+                    <div className="d-flex ">
+                        <div className="p-2 pl-20" style={{ marginBottom: 'auto', marginTop: 'auto' }}>
                             <div>
                                 <img src={require(`../../assets/Image/Business/${this.props.data.logo}`)} style={{ width: '72px', height: '72px', borderRadius: '50%' }} />
 
@@ -44,15 +44,15 @@ class MembershipCard extends Component {
 
                         </div>
                     </div>
-                    <div class="d-flex justify-content-end mb-2">
+                    <div className="d-flex justify-content-end mb-2">
                        
-                        <div class="p-2">
+                        <div className="p-2">
                             <span className='payspan' style={{ color: '#adadad',backgroundColor: 'white' }}>{this.props.data.offer}</span>
                         </div>
 
 
 
-                        <div class="p-2">
+                        <div className="p-2">
                             <span className='payspanCircle SecondBlack'>Pay</span>
 
                         </div>

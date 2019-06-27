@@ -30,7 +30,7 @@ class Dashboard extends Component {
         return (
             <div className="row" style={{ marginBottom: '20px' }}>
                 <div className="col-md-9">
-                    <input type="text" class="form-control" placeholder="Search..." />
+                    <input type="text" className="form-control" placeholder="Search..." />
                 </div>
                 <div className="col-md-3" style={{ textAlign: 'center' }}>
                     <select className="form-control">
@@ -48,15 +48,15 @@ class Dashboard extends Component {
             return (
 
                 <div className="col-md-3 InfoCard">
-                    <div class="ACard d-flex mb-3">
-                        <div class="p-2 flex-grow-1 ">
-                            <div class="d-flex flex-column">
-                                <div class="p-2" style={{ color: `${headerSection.iconcolor}`, fontSize: '30px' }}>{headerSection.value}</div>
-                                <div class="p-2 SecondBlack">{headerSection.type}</div>
+                    <div className="ACard d-flex mb-3">
+                        <div className="p-2 flex-grow-1 ">
+                            <div className="d-flex flex-column">
+                                <div className="p-2" style={{ color: `${headerSection.iconcolor}`, fontSize: '30px' }}>{headerSection.value}</div>
+                                <div className="p-2 SecondBlack">{headerSection.type}</div>
                             </div>
                         </div>
 
-                        <div class="p-2" style={{ marginBottom: 'auto', marginTop: 'auto' }}>
+                        <div className="p-2" style={{ marginBottom: 'auto', marginTop: 'auto' }}>
                             <img src={require(`../../assets/Image/Icons/${headerSection.logo}`)} style={{ width: '44px', height: '44px' }} />
                         </div>
                     </div>
@@ -69,7 +69,7 @@ class Dashboard extends Component {
             <div>
                 <div className="row justify-content-center" style={{ marginTop: '20px' }}>
 
-                    <div class="col-lg-10">
+                    <div className="col-lg-10">
                         {/* <div className="InfoCardRow">
                             {this.cardrender()}
                         </div> */}

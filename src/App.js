@@ -8,6 +8,7 @@ import Services from './Pages/Services/Services';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import TransactionList from './Pages/Transaction/TransactionList';
 import CardBrief from './Pages/Common/CardBrief';
+import AddPing from './Pages/Common/AddPing';
 function App() {
   return (
     <div className="">
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Home/Service" component={Services} />
         <Route path="/Home/Transaction" component={TransactionList} />
         <Route path="/Home/CardBrief" component={CardBrief} />
+        <Route path="/Home/AddPing" component={AddPing} />
       </BrowserRouter>
     </div>
   );
